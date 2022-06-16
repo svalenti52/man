@@ -64,14 +64,14 @@ static auto julia_iterations(cmplx i_z)
 {
     cmplx z{ i_z };
     //const cmplx c( - 0.8, 0.156 );
-    const cmplx c(-0.4, 0.6);
+    //const cmplx c(-0.4, 0.6);
     //const cmplx c(-0.835, -0.2321);
     //const cmplx c(0.0, 0.8);
     //const cmplx c(0.355, 0.355);
     //const cmplx c(0.37, 0.1);
     //const cmplx c(-0.54, 0.54);
     //const cmplx c(-0.4, -0.59);
-    //const cmplx c(0.355534, -0.337292);
+    const cmplx c(0.355534, -0.337292);
     //const cmplx c(-0.202420806884766, 0.39527333577474);
     //const cmplx c(-0.162, 1.04);
     //const cmplx c(-0.12, 0.74);
@@ -241,7 +241,7 @@ void draw_mandelbrodt(HDC& hdc)
     {
         auto rx = r[ix].get();
         // auto rx = r[ix];
-        Color_Pixel_Julia_3(rx, ix, hdc);
+        Color_Pixel_Julia_1(rx, ix, hdc);
     }
 
 }
